@@ -1,0 +1,414 @@
+.navbar {
+  /* background: rgb(31, 31, 31); */
+  width: 100%;
+  max-width: 100vw;
+  height: 70px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  position: fixed;
+  z-index: 2;
+  font-family: "Libre Baskerville";
+  /* transition: 0.4s; */
+  background: rgba(0, 0, 0, 0);
+}
+
+/* ul :global(ul) {
+  margin-bottom: 0;
+} */
+
+.shopName {
+  width: 220px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shopName a {
+  color: var(--white);
+}
+.shopName a:hover {
+  color: var(--white);
+}
+
+.link {
+  /* background: rgb(255, 143, 143); */
+  width: 90px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
+.navlink:hover {
+  color: var(--brownlight);
+  transition: 0.25s;
+}
+.navlink {
+  color: var(--white);
+  border-bottom: 3px solid rgb(31, 31, 31, 0);
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  font-size: 14px;
+  color: var(--white);
+}
+
+.active {
+  color: var(--brownlight);
+  border-bottom: 3px solid var(--brownlight);
+}
+
+.divider {
+  background: var(--white);
+  width: 2px;
+  height: 30px;
+  margin: auto 1rem auto 1.5rem;
+}
+
+.cart {
+  width: 50px;
+  margin-right: 1rem;
+}
+
+.login:hover {
+  color: var(--brownlight);
+  border: 1px solid var(--brownlight);
+  transition: 0.25s;
+}
+
+.login {
+  width: 90px;
+  height: 36px;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  cursor: pointer;
+}
+.activeLogin {
+  color: var(--brownlight);
+  border: 1px solid var(--brownlight);
+}
+
+.coverLoginModal {
+  font-family: "Libre Baskerville";
+}
+
+.iconLogin {
+  /* color: var(--black); */
+  margin-right: 4px;
+  font-size: 16px;
+}
+:global(.ant-form-item-explain-error) {
+  font-size: 10px;
+}
+
+.coverUserNameInput {
+  margin: 2rem 0 1rem 0;
+}
+
+.loginAndRegisButton:hover {
+  letter-spacing: 3.6px;
+}
+
+.loginAndRegisButton {
+  width: 100%;
+  transition: 0.5s;
+  background: var(--brownlight);
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  color: var(--white);
+  margin-top: 2rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.coverFnameLastname {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.popover {
+  font-family: "Libre Baskerville";
+  /* border-top: 4px solid var(--brownlight); */
+  width: 260px;
+  padding-top: 1rem;
+  /* background: rgb(255, 151, 151); */
+}
+
+.borderTop {
+  background: var(--brownlight);
+  width: 260px;
+  margin-left: -16px;
+  height: 6px;
+  margin-top: -12px;
+}
+.scroll {
+  /* max-height: 280px; */
+  max-height: 190px;
+  height: 100%;
+  overflow: auto;
+}
+
+/* .scroll::-webkit-scrollbar {
+  width: 10px;
+} */
+.scroll::-webkit-scrollbar {
+  width: 8px;
+  margin: 1rem;
+}
+
+.scroll::-webkit-scrollbar-track {
+  /* background-color: #e4e4e4;
+  border-radius: 100px; */
+  display: none;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: var(--gray5);
+  border-radius: 2px;
+  /* background-image: linear-gradient(180deg, var(--brownlight) 0%, var(--white) 99%); */
+}
+
+.popoverRow1 {
+  /* background: rgb(146, 255, 168); */
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.popoverRow2 {
+  /* background: rgb(48, 100, 255); */
+  margin: 0.1rem 0 0.5rem 0;
+  font-size: 12px;
+  color: var(--gray3);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.italic {
+  margin-right: 1rem;
+}
+.price {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  /* color: var(--brownlight); */
+}
+.line {
+  background: var(--gray5);
+  height: 1px;
+  /* margin: 0.5rem 0; */
+}
+.totalPrice {
+  font-size: 18px;
+  color: var(--brownlight);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.popoverButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.button:hover {
+  color: var(--white);
+  background: var(--brownlight);
+  letter-spacing: 4px;
+}
+.button {
+  transition: 0.5s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--brownlight);
+  color: var(--white);
+  width: 100%;
+  padding: 0.5rem 0;
+  border-radius: 2px;
+  margin: 0.5rem 0;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.activeButtonViewCart {
+  pointer-events: none;
+  background: var(--gray4);
+  color: var(--white);
+}
+
+.hamburgerButton {
+  width: 24px;
+  height: 24px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburgerButton div {
+  width: 100%;
+  height: 4px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: 0.2s;
+}
+
+.menuOverlay {
+  position: fixed;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  background: rgba(0, 0, 0);
+  top: 70px;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 10;
+  /* background: rgb(255, 147, 147); */
+}
+.menuOverlay li {
+  /* background: rgb(83, 76, 76); */
+  width: 100%;
+  height: 100%;
+  /* margin: 30px 0px 0px 0px; */
+  margin-left: 0px;
+}
+
+.navlinkMobile:hover {
+  color: var(--brownlight);
+  background: var(--black);
+  transition: 0.25s;
+}
+.navlinkMobile {
+  color: var(--white);
+  border-bottom: 3px solid rgb(31, 31, 31, 0);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartInOverlay {
+  margin: 0.5rem;
+}
+
+.showNavbar {
+  display: flex;
+}
+.showBg {
+  background: #000;
+}
+.showX div:nth-child(2) {
+  opacity: 0;
+}
+.showX div:nth-child(1) {
+  transform: rotate(-45deg) translate(-2px, 12px);
+  width: 26px;
+  margin-left: -10px;
+}
+.showX div:nth-child(3) {
+  transform: rotate(45deg) translate(-2px, -12px);
+  width: 26px;
+  margin-left: -10px;
+}
+
+.loginMobile {
+  display: none;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.profileAndLogout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* font-size: 16px; */
+}
+.lineInProfileAndLogout {
+  height: 0.5px;
+  width: 100%;
+  background: var(--gray5);
+  margin: 6px 0;
+}
+.profile {
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logout {
+  font-size: 12px;
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: center;
+  color: var(--gray4);
+}
+.userLogin:hover {
+  color: var(--brownlight);
+}
+.userLogin {
+  transition: 0.5s;
+  font-size: 22px;
+  margin-top: 1.3rem;
+}
+.coverUserLoginMobile {
+  color: var(--white);
+  cursor: pointer;
+  display: none;
+}
+.userLoginMobile {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  padding-top: 6px;
+  justify-content: center;
+}
+.activeUserLoginMobile {
+  color: var(--brownlight);
+}
+
+@media only screen and (max-width: 960px) {
+  .text {
+    display: none;
+  }
+  .shopName {
+    display: none;
+  }
+  .loginMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .coverUserLoginMobile {
+    display: flex;
+  }
+  .hamburgerButton {
+    display: flex;
+  }
+}

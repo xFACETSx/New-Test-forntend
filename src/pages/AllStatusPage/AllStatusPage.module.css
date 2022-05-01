@@ -1,0 +1,66 @@
+.coverHeader {
+    background: #202020c7;
+    height: 300px;
+    width: 100%;
+}
+.imgHeader {
+    background-image: url(../../picture/img15.jpeg);
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+}
+.textHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-family: "Libre Baskerville";
+    height: 300px;
+    width: 100%;
+    color: var(--white);
+    position: absolute;
+    z-index: 1;
+}
+
+.cover {
+    padding: 4rem;
+}
+.noOrder {
+    height: 100%;
+    /* background: #000; */
+}
+.coverContainerOrder {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 360px);
+    justify-content: space-between;
+    gap: 1rem;
+}
+.coverOrder:hover {
+    transform: scale(1.1);
+}
+.coverOrder {
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 10px 8px 0px;
+
+    /* background: var(--gray3); */
+}
+
+@media only screen and (max-width: 1024px) {
+    .cover {
+        padding: 2rem 5rem;
+        grid-template-columns: repeat(auto-fill, 410px);
+    }
+}
+@media only screen and (max-width: 960px) {
+    .cover {
+        padding: 2rem 1rem;
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
+}

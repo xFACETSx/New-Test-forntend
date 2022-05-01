@@ -1,0 +1,218 @@
+.container {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-family: "Libre Baskerville";
+    position: relative;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 100%;
+}
+.container:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 10px 8px 0px;
+    transform: scale(1.05);
+}
+
+.img {
+    transition: 0.5s;
+    /* width: 280px; */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+}
+
+.sale {
+    font-size: 16px;
+    font-weight: 800;
+    font-style: italic;
+    width: 50px;
+    height: 30px;
+    border-radius: 2px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: var(--white);
+    background: var(--brownlight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coverDetail {
+    /* background: rgb(138, 255, 134); */
+    padding: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.coverPriceAndName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.name {
+    font-size: 18px;
+}
+.coverPriceSaleTo {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.price {
+    color: var(--brownlight);
+    font-size: 16px;
+}
+.priceSaleTo {
+    margin-right: 6px;
+    font-size: 12px;
+    color: var(--gray4);
+    text-decoration: line-through;
+}
+
+.rateCustom :global(.ant-rate) {
+    /* background: rgb(255, 133, 133); */
+    display: inline-block;
+    margin-bottom: 4px;
+    padding: 0;
+    color: var(--brownlight);
+    font-size: 12px;
+}
+
+.star :global(.ant-rate-star):not(:last-child) {
+    margin-right: 2px;
+}
+
+.star :global(.ant-rate-star-second) {
+    color: var(--gray5);
+    /* background: var(--gray4); */
+    /* transition: all 0.3s; */
+    user-select: none;
+}
+:global(.Menu_rateCustom__IaJVW) :global(.ant-rate) {
+    margin-bottom: 2px;
+    padding: 0;
+    color: var(--brownlight);
+    font-size: 12px;
+    outline: none;
+}
+
+.button {
+    /* width: 100%; */
+    height: 40px;
+    border-radius: 2px;
+    background: var(--brownlight);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+}
+.textButton {
+    font-size: 12px;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.drawerSweet {
+    font-family: "Libre Baskerville";
+}
+.closeButton {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    /* margin: 1rem; */
+}
+.titleDrawer {
+    /* background: rgb(255, 158, 158); */
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.header {
+    font-size: 16px;
+}
+.sweet :global(.ant-radio-group.ant-radio-group-solid) {
+    display: flex;
+    font-size: 16px;
+}
+
+.sweet :global(.ant-radio-button-wrapper) {
+    text-align: center;
+    flex: 1;
+}
+
+.line {
+    background: var(--gray5);
+    height: 1px;
+    margin-bottom: 1.6rem;
+}
+
+/* .coverRow2 {
+    background: #ff9b9b;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+} */
+.coverQuantityPrice {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+.coverInQuanPri {
+    /* background: rgb(255, 126, 126); */
+    display: flex;
+    justify-content: center;
+}
+
+.inputNumberText {
+    /* background: rgb(255, 92, 92); */
+    display: flex;
+    padding-right: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 100;
+    color: var(--gray3);
+}
+
+.countPrice {
+    width: 66px;
+    height: 32px;
+    /* background: rgb(255, 174, 174); */
+    border-bottom: 1.5px solid var(--brownlight);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addToCartButtonDrawer {
+    cursor: pointer;
+    background: var(--brownlight);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: var(--white);
+    border-radius: 2px;
+    margin-top: 4rem;
+}
+
+@media only screen and (max-width: 960px) {
+    .drawerSweet :global(.ant-drawer-content-wrapper) {
+        width: 100vw !important;
+    }
+}

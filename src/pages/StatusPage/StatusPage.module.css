@@ -1,0 +1,151 @@
+.coverHeader {
+    /* background: var(--brownlight); */
+    background: var(--black);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.coverArrowBack {
+    color: var(--white);
+    font-size: 32px;
+    /* background: #000; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    /* width: 124px; */
+    width: 348px;
+}
+.arrowBack {
+    cursor: pointer;
+}
+
+.textHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-family: "Libre Baskerville";
+    width: 100%;
+    color: var(--white);
+}
+
+.cover {
+    padding: 4rem 20rem;
+    font-family: "Libre Baskerville";
+}
+.dividerMobile {
+    width: 100%;
+    height: 0.5px;
+    /* background: var(--gray5); */
+    background: var(--brownlight);
+    margin: 2.6rem 0 1rem 0;
+}
+.coverRow1 {
+    display: flex;
+    justify-content: space-between;
+    /* background: #000; */
+}
+.totalPrice {
+}
+.price {
+    /* margin-top: 1rem; */
+    color: var(--brownlight);
+}
+
+.orderID {
+    color: var(--gray4);
+}
+.drawerDetail {
+    text-align: center;
+    border-bottom: 1px solid var(--black);
+}
+
+.coverMenuList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.menuCard {
+    display: flex;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* padding: 1rem; */
+    /* background: #000; */
+}
+.img {
+    width: 180px;
+    height: 140px;
+    /* height: 100%; */
+    object-fit: cover;
+    border-radius: 4px 0 0 4px;
+}
+.menuDetail {
+    font-family: "Libre Baskerville";
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    margin: 0.5rem 1rem;
+}
+.sweet {
+    font-size: 12px;
+    color: var(--gray4);
+}
+.priceMenuList {
+    color: var(--brownlight);
+    font-size: 16px;
+}
+.note {
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .coverArrowBack {
+        width: 156px;
+    }
+    .cover {
+        padding: 4rem;
+    }
+    .coverMenuList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .img {
+        width: 150px;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .coverHeader {
+        height: 70px;
+    }
+    .coverArrowBack {
+        width: 50px;
+    }
+    .cover {
+        padding: 1rem;
+    }
+    .step {
+        /* background: #000; */
+        /* padding: 1rem; */
+    }
+    .dividerMobile {
+        width: 100%;
+        height: 0.5px;
+        /* background: var(--gray5); */
+        background: var(--brownlight);
+        margin: -0.5rem 0 1rem 0;
+    }
+    .divider {
+        /* margin-bottom: 1rem; */
+    }
+    .coverMenuList {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 1rem;
+    }
+    .img {
+        width: 140px;
+    }
+}

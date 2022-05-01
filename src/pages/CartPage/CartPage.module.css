@@ -1,0 +1,279 @@
+.coverHeader {
+    background: #202020c7;
+    height: 300px;
+    width: 100%;
+}
+.imgHeader {
+    background-image: url(../../picture/img15.jpeg);
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+}
+.textHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-family: "Libre Baskerville";
+    height: 300px;
+    width: 100%;
+    color: var(--white);
+    position: absolute;
+    z-index: 1;
+}
+
+.cover {
+    /* min-height: 40vh;
+    background: var(--white); */
+    padding: 4rem;
+    /* display: flex; */
+    font-family: "Libre Baskerville";
+}
+
+.coverMenuList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 1rem;
+
+    /* background: rgb(255, 83, 83); */
+}
+.coverMenu {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-family: "Libre Baskerville";
+    width: 100%;
+    display: flex;
+    border-radius: 4px;
+}
+.coverMenuDetail {
+    /* margin: 1rem; */
+    display: flex;
+    /* margin: 8px; */
+    /* padding: 0.5rem 1rem; */
+    padding-left: 1rem;
+    width: 100%;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+}
+.title {
+    color: var(--gray3);
+    font-size: 12px;
+    /* margin-left: 10px; */
+}
+.img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px 0 0 4px;
+}
+.sweet {
+    margin-left: 10px;
+    width: 80px;
+    font-size: 10px;
+}
+.quantity {
+    margin-left: 10px;
+    width: 80px;
+}
+.totalPrice {
+    display: flex;
+}
+.textBaht {
+    color: var(--black);
+    display: flex;
+    align-items: center;
+}
+
+/* .coverMenu:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 10px 8px 0px;
+    transform: scale(1.05);
+} */
+/* .detail {
+    background: #000;
+    display: flex;
+    justify-content: flex-start;
+} */
+/* .coverTitle {
+    border: 0.5px solid var(--gray5);
+    padding: 1rem 2rem;
+} */
+
+/* .coverMenu {
+    border: 0.5px solid var(--gray5);
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem 2rem;
+} */
+.closeButton {
+    /* background: #000; */
+    margin: 10px;
+    margin-left: auto;
+    cursor: pointer;
+    color: var(--brownlight);
+    /* width: 50px; */
+    /* max-width: 60px; */
+    /* height: 100%; */
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; */
+    border-radius: 2px;
+}
+.closeButton:hover {
+    transition: 0.5s;
+    background: var(--brownlight);
+    color: var(--white);
+}
+.coverCoupon {
+    /* background: rgb(255, 147, 147); */
+    margin: 2rem 0;
+    width: 500px;
+    display: flex;
+}
+.coverInputCoupon {
+    /* background: rgb(255, 139, 139); */
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 10px;
+    color: var(--brownlight);
+}
+.coverInputCoupon :global(.ant-input) {
+    width: 300px;
+}
+.couponButton {
+    background: var(--brownlight);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 2px;
+    font-size: 12px;
+    margin-left: 1rem;
+    cursor: pointer;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.textHeaderCartTotal {
+    font-size: 16px;
+    margin: 2rem 0 0.5rem 0;
+}
+.detailCartTotal {
+    /* background: rgb(255, 143, 143); */
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 36px;
+    border: 1px solid var(--gray5);
+    border-radius: 2px;
+}
+
+.coverCheckoutButton {
+    display: flex;
+    justify-content: flex-end;
+    transition: 0.5s;
+}
+
+.checkoutButton:hover {
+    color: var(--white);
+    background: var(--brownlight);
+    letter-spacing: 4px;
+
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 10px 8px 0px; */
+    /* transform: scale(1); */
+}
+.checkoutButton {
+    transition: 0.5s;
+    background: var(--brownlight);
+    width: 200px;
+    color: var(--white);
+    padding: 1.5rem 1rem;
+    border-radius: 2px;
+    /* box-shadow: ; */
+    /* border: 0.5px solid var(--gray5); */
+    font-size: 14px;
+    margin-top: 2rem;
+    cursor: pointer;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .cover {
+        padding: 2rem;
+    }
+    .coverMenuList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* .detail {
+        flex-direction: column;
+        align-items: flex-start;
+    } */
+    .img {
+        width: 180px;
+        /* height: 180px; */
+    }
+    .checkoutButton {
+        padding: 1rem;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .cover {
+        padding: 1rem;
+    }
+
+    .coverMenuList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* .detail {
+        flex-direction: column;
+        align-items: flex-start;
+    } */
+    .img {
+        width: 140px;
+        /* height: 120px; */
+    }
+
+    .coverCoupon {
+        width: 100%;
+        flex-direction: column;
+    }
+    .coverInputCoupon :global(.ant-input) {
+        width: 100%;
+    }
+    .couponButton {
+        padding: 0;
+        margin: 0;
+    }
+
+    .detailCartTotal {
+        flex-direction: column;
+        height: 300px;
+        padding: 0 2rem;
+        align-items: flex-start;
+    }
+    .checkoutButton {
+        width: 100%;
+        height: 40px;
+        padding: 2rem;
+        font-size: 16px;
+        margin-top: 2rem;
+    }
+}

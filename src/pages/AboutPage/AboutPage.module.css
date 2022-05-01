@@ -1,0 +1,198 @@
+.coverHeader {
+    background: #202020c7;
+    height: 300px;
+    width: 100%;
+}
+.imgHeader {
+    background-image: url(../../picture/img4.jpeg);
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+}
+.textHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-family: "Libre Baskerville";
+    height: 300px;
+    width: 100%;
+    color: var(--white);
+    position: absolute;
+    z-index: 1;
+}
+
+.body {
+    background: var(--white);
+}
+
+.container {
+    /* background: #000; */
+    max-width: 1600px;
+    width: 100%;
+    /* height: 1000px; */
+    margin: 0 auto;
+    padding: 4rem;
+    font-family: "Libre Baskerville";
+    color: var(--black);
+}
+
+.topBox {
+    /* background: rgb(129, 255, 124); */
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 450px;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+}
+
+.imgProfile {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.topBoxContainer {
+    /* background: rgb(106, 104, 255); */
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
+}
+
+.coverHeadText {
+    /* background: #000; */
+    width: 100%;
+    text-align: center;
+    margin: 1.5rem 0rem;
+}
+.headText {
+    font-size: 20px;
+}
+
+.coverParagraph {
+    font-size: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.coverCaption {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-left: 8px solid var(--brownlight);
+    margin-bottom: 1.5rem;
+}
+
+.contactContainer {
+    /* background: #000; */
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 0.25rem;
+}
+.textInContact {
+    font-size: 14px;
+    margin: 0 0.5rem;
+}
+
+.bottomBox {
+    /* background: rgb(255, 112, 112); */
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottomBoxContainer {
+    /* background: rgb(120, 255, 210); */
+    /* max-width: 500px;
+    width: 100%; */
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    /* height: 400px; */
+}
+.coverHeadTextOurShop {
+    width: 100%;
+    text-align: start;
+    margin: 1rem 0rem;
+}
+
+.imgShop {
+    object-fit: cover;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    /* max-height: 400px; */
+    /* height: 100%; */
+    height: 400px;
+}
+
+/* p {
+    text-indent: 1rem;
+} */
+
+@media screen and (max-width: 1200px) {
+    .topBoxContainer {
+        max-width: 450px;
+    }
+    .imgShop {
+        max-width: 450px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .container {
+        padding: 2rem;
+    }
+    .topBox {
+        flex-direction: column;
+    }
+    .imgProfile {
+        width: 300px;
+        height: 300px;
+    }
+    .coverCaption {
+        /* border: 0; */
+        border-left: 4px solid var(--brownlight);
+        text-align: center;
+    }
+    .icon {
+        font-size: 20px;
+    }
+    .textInContact {
+        font-size: 12px;
+    }
+
+    .bottomBox {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .bottomBoxContainer {
+        max-width: 450px;
+    }
+
+    .imgShop {
+        height: 200px;
+    }
+}

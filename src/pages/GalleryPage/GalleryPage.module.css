@@ -1,0 +1,66 @@
+.coverHeader {
+    background: #202020c7;
+    height: 300px;
+    width: 100%;
+}
+.imgHeader {
+    background-image: url(../../picture/galleryHeader.jpeg);
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+}
+.textHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-family: "Libre Baskerville";
+    height: 300px;
+    width: 100%;
+    color: var(--white);
+    position: absolute;
+    z-index: 1;
+}
+
+.body {
+    background: var(--white);
+}
+.galleryContainer {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 4rem;
+}
+.gallery {
+    column-count: 3;
+    column-gap: 1rem;
+    /* row-gap: 1rem; */
+    /* gap: 1rem; */
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
+.gallery > div {
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 960px) {
+    .galleryContainer {
+        max-width: 1600px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .gallery {
+        column-count: 2;
+    }
+    .galleryContainer {
+        padding: 2rem;
+    }
+}
